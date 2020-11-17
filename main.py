@@ -21,7 +21,8 @@ def get_link():
     url = str(url_link.get())
     yt = YouTube(url)
     global ls_stream
-    ls_stream = yt.streams.filter(subtype='mp4').order_by('resolution').desc().all()
+    # ls_stream = yt.streams.filter(subtype='mp4').order_by('resolution').desc().all()
+    ls_stream = yt.streams
     for i in ls_stream:
         listBox.insert(END, i)
 

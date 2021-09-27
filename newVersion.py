@@ -10,6 +10,7 @@ BG_COLOR = ""
 root = Tk()
 root.title('Youtube Downloader - NDC')
 root.geometry('800x400')
+root.iconphoto(False, PhotoImage(file='./icon.png'))
 
 previousprogress = 0
 
